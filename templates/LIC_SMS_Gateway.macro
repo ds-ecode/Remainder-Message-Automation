@@ -1,0 +1,105 @@
+{
+  "disabledTimestamp": 1794969296301,
+  "exportedActionBlocks": [],
+  "forceEvenIfNotEnabledTimestamp": 0,
+  "isActionBlock": false,
+  "isBeingImported": false,
+  "isClonedInstance": false,
+  "isExtra": false,
+  "isFavourite": false,
+  "lastEditedTimestamp": 1794969285347,
+  "localVariables": [
+    {
+      "dictionary": {
+        "entries": [],
+        "isArray": false,
+        "variableType": 4,
+        "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "phone",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+    },
+    {
+      "dictionary": {
+        "entries": [],
+        "isArray": false,
+        "variableType": 4,
+        "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "msg",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+    }
+  ],
+  "m_GUID": -5022565869866978392,
+  "m_actionList": [
+    {
+      "m_option": 1,
+      "m_text": "{lv=msg}",
+      "m_textManipulation": {
+        "type": "ReplaceAllManipulation",
+        "params": [
+          "\\+",
+          " "
+        ]
+      },
+      "variableName": "msg",
+      "m_SIGUID": -9070417499867701127,
+      "m_classType": "TextManipulationAction",
+      "m_constraintList": [],
+      "m_isDisabled": false,
+      "m_isOrCondition": false
+    },
+    {
+      "m_addToMessageLog": false,
+      "m_contact": {
+        "m_id": "Hardwired_Number",
+        "m_lookupKey": "Hardwired_Number",
+        "m_name": "[Select Number]"
+      },
+      "m_messageContent": "{lv=msg}",
+      "m_number": "{lv=phone}",
+      "m_prePopulate": false,
+      "m_simId": 0,
+      "m_SIGUID": -8181810212316775975,
+      "m_classType": "SendSMSAction",
+      "m_constraintList": [],
+      "m_isDisabled": false,
+      "m_isOrCondition": false
+    }
+  ],
+  "m_category": "Uncategorized",
+  "m_constraintList": [],
+  "m_description": "",
+  "m_descriptionOpen": false,
+  "m_enabled": true,
+  "m_excludeLog": false,
+  "m_headingColor": 0,
+  "m_isOrCondition": false,
+  "m_name": "Lic_sms_Gateway_Template",
+  "m_triggerList": [
+    {
+      "identifier": "send_lic_message",
+      "m_SIGUID": -6396662680249859212,
+      "m_classType": "WebHookTrigger",
+      "m_constraintList": [],
+      "m_isDisabled": false,
+      "m_isOrCondition": false
+    }
+  ]
+}
